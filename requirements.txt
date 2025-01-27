@@ -1,0 +1,15 @@
+Flask
+pandas
+numpy
+scikit-learn
+gunicorn
+PyPDF2
+langchain
+langchain_groq
+python-dotenv
+faiss-cpu
+huggingface_hub
+sentence_transformers
+langchain_community
+duckduckgo-search
+Wikipedia

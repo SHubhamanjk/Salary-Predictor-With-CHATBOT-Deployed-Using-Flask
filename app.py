@@ -8,8 +8,8 @@ from langchain.prompts import PromptTemplate
 from langchain.memory import ConversationBufferMemory
 memory=ConversationBufferMemory(memory_key="chat_history",return_messages=True)
 groq=ChatGroq(api_key=os.environ.get('GROQ_API_KEY'),model="gemma2-9b-it")
-
-
+from dotenv import load_dotenv
+load_dotenv()
 from langchain.agents import AgentType, initialize_agent
 from langchain_community.tools import DuckDuckGoSearchRun,WikipediaQueryRun
 from langchain_community.utilities import DuckDuckGoSearchAPIWrapper, WikipediaAPIWrapper
